@@ -20,7 +20,7 @@ Restarting for initially rejected idea for several contests, we decided to make 
 
 ### Initial Prototype
 
-![Albarumi's Initial Prototype](/doc-pic/프로토타입(구버전).png)
+![Albarumi's Initial Prototype](/doc/프로토타입(구버전).png)
 
 ## 👪Contributor(s)
 
