@@ -30,3 +30,9 @@ Restarting for initially rejected idea for several contests, we decided to make 
 ## 👪 Contributor(s)
 
 - [🔗Unperknown](https://github.com/Unperknown)
+
+## 📅Daily Progress
+
+### 8/26 ~ 8/30 : Struggled From An Internet for A Whole Week!🤯
+
+### 9/2 : Set Up Development Environment With Flutter
