@@ -24,7 +24,7 @@ Restarting for initially rejected idea for several contests, we decided to make 
 
 ## 🔑 Technology Stacks
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png " width="300" height="150" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="300" height="150" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/1024px-Dart_programming_language_logo.svg.png" width="300" height="100" />
 
 ## 👪 Contributor(s)
