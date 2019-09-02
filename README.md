@@ -5,18 +5,18 @@
 ![GitHub](https://img.shields.io/github/license/Unperknown/Albarumi)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Unperknown/Albarumi)
 
-# Albarumi(올바르미)
+# 👣Albarumi(올바르미)
 
 ## 📋Purpose
 Restarting for initially rejected idea for several contests, we decided to make a cross-platform app that helps people to find what they lost for each other, which is called Albarumi(means 'justness' in Korean).
 
-## Goals
+## 💡Goals
 
 1. Make sure to design a better experience for users for accessability and convenience.
 2. The application must be run in cross-platform(iOS & Android).
 3. If possible, additional Progressive Web App should be created.
 
-## Prototype
+## 🎞Prototype
 
 ### Initial Prototype
 
