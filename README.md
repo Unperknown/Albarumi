@@ -27,9 +27,11 @@ Restarting for initially rejected idea for several contests, we decided to make 
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="300" height="150" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/1024px-Dart_programming_language_logo.svg.png" width="300" height="100" />
 
-## 👪 Contributor(s)
+## 👪 Contributors
 
 - [🔗Unperknown](https://github.com/Unperknown)
+- [🔗Taegeon Yoo](https://github.com/taegeon-ryan)
+- [🔗Taegeon Lim](https://github.com/Im-Tae)
 
 ## 📅 Daily Progress
 
@@ -50,4 +52,4 @@ Today's Cons
 - 모바일 애플리케이션 분야에 대한 구체적인 경험이 없어서 바로 구현 단계로 진입하지 못한 것이 아쉽다.
 - 프로토타입 디자인을 해본 적이 없어서 애플리케이션을 제작하기에 앞서 먼저 이 부분에 대한 빠른 적응이 필요하다.
 
-### 9/3 ~ : Design and Design and...
+### 9/6 Teamed up with Contributors
