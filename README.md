@@ -65,10 +65,11 @@ Today's Cons
 - 처음 경험하는 분야라서 도메인 지식이나 개발 역량 등이 부족했다. 앞으로 이 부분에 대해서 많은 탐구를 해야 할 것이다.
 - 이 날의 작업을 기획에만 집중해서 Pair Programming 등 프로젝트에 사용할 수 있는 기법을 바로 적용하지 못한 점이 아쉽다.
 
-### 9/24 ~ 9/25 - Gathered Assets and Designed Login Page!
+### 9/24 ~ 9/25 - Gathered Assets and Designed Splash Screen Page and Login Page!
 
-애플리케이션 개발에 필요한 폰트와 이미지를 모으고 시연품을 제작하는 겸 로그인 페이지를 완성하였다. 다만, 이 페이지의 뒷 기능은 나중에 할 계획이다.
+애플리케이션 개발에 필요한 폰트와 이미지를 모으고 시연품을 제작하는 겸 시작 페이지와 로그인 페이지를 완성하였다. 다만, 이 페이지의 뒷 기능(Back-end)은 나중에 할 계획이다.
 
+<img src="doc/splash_screen.png" width="275" height="600" />
 <img src="doc/login_page.png" width="275" height="600" />
 
 Today's Pros
