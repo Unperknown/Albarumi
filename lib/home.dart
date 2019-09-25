@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:albarumi/colors.dart';
+import 'package:splashscreen/splashscreen.dart';
 
 class AlbarumiApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: AlbarumiHome(),
-    );
-  }
+    @override
+    Widget build(BuildContext context) {
+      	return MaterialApp(
+      		home: AlbarumiSplashScreen(),
+		);
+    }
+}
+
+class AlbarumiSplashScreen extends StatefulWidget {
+	@override
+	SplashScreenState createState() => SplashScreenState();
 }
 
 class AlbarumiHome extends StatefulWidget {
@@ -19,6 +25,26 @@ class AlbarumiHome extends StatefulWidget {
 class AlbarumiRegister extends StatefulWidget {
   @override
   RegisterState createState() => RegisterState();
+}
+
+class SplashScreenState extends State<AlbarumiSplashScreen> {
+	@override
+  Widget build(BuildContext context) {
+    return new SplashScreen(
+      seconds: 3,
+      navigateAfterSeconds: new AlbarumiHome(),
+      title: new Text('올바르미',
+        style: new TextStyle(
+          fontFamily: 'TmonMonsori',
+          fontSize: 60.0,
+          color: Colors.white,
+        ),
+      ),
+      backgroundColor: AlbarumiDarkColor,
+      styleTextUnderTheLoader: new TextStyle(),
+      loaderColor: Colors.white,
+    );
+  }
 }
 
 class HomeState extends State<AlbarumiHome> {
