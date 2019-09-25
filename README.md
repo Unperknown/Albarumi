@@ -69,7 +69,7 @@ Today's Cons
 
 애플리케이션 개발에 필요한 폰트와 이미지를 모으고 시연품을 제작하는 겸 로그인 페이지를 완성하였다. 다만, 이 페이지의 뒷 기능은 나중에 할 계획이다.
 
-![Login Page](doc/login_page.png)
+<img src="doc/login_page.png" width="275" height="600" />
 
 Today's Pros
 - Flutter의 API 문서를 보고 Flutter로 개발된 프로젝트의 과정을 벤치 마킹 삼아 디자인하니 결과물이 준수하게 나올 수 있었다.
