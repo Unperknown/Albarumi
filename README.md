@@ -32,7 +32,7 @@ Restarting for initially rejected idea for several contests, we decided to make 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="200" height="100" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/1024px-Dart_programming_language_logo.svg.png" width="200" height="67" />
-<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" width="200" height="75" />
+<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" width="225" height="75" />
 
 ## 📅 Daily Progress
 
