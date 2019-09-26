@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "673550546580",
+    "firebase_url": "https://albarumi-faa2a.firebaseio.com",
+    "project_id": "albarumi-faa2a",
+    "storage_bucket": "albarumi-faa2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673550546580:android:05adf435e193f664702681",
+        "android_client_info": {
+          "package_name": "com.unperknown.albarumi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673550546580-d4bp546n558j0o6uh7867k7plsj7ntq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTbiPuhP5HuX_KgGWkzzhmeickSarA9-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673550546580-d4bp546n558j0o6uh7867k7plsj7ntq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
