@@ -30,8 +30,9 @@ Restarting for initially rejected idea for several contests, we decided to make 
 
 ## 🔑 Technology Stacks
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="300" height="150" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/1024px-Dart_programming_language_logo.svg.png" width="300" height="100" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="200" height="100" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/1024px-Dart_programming_language_logo.svg.png" width="200" height="67" />
+<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" width="200" height="75" />
 
 ## 📅 Daily Progress
 
@@ -78,3 +79,7 @@ Today's Pros
 
 Today's Cons
 - 현재 코드의 가독성이 떨어진다. 어떻게 하면 리팩토링된 Dart 코드를 작성할 수 있을지 고민해보아야 한다.
+
+### 9/26 - Connected with Firebase for Third Party Authentication
+
+타 웹페이지의 로그인 API를 불러올 수 있도록 애플리케이션을 Firebase와 연동하였다.
