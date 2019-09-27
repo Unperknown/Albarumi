@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:albarumi/home.dart';
+import 'package:Albarumi/home.dart';
 
 void main() => runApp(AlbarumiApp());
