@@ -80,6 +80,17 @@ Today's Pros
 Today's Cons
 - 현재 코드의 가독성이 떨어진다. 어떻게 하면 리팩토링된 Dart 코드를 작성할 수 있을지 고민해보아야 한다.
 
-### 9/26 - Connected with Firebase for Third Party Authentication
+### 9/26 ~ 9/27 - Connected with Firebase for Third Party Authentication
 
-타 웹페이지의 로그인 API를 불러올 수 있도록 애플리케이션을 Firebase와 연동하였다.
+타 웹페이지의 로그인 API를 불러올 수 있도록 애플리케이션을 Firebase와 연동하였다. 로그인 과정을 간단하게 하기 위해서 Google, Facebook, 카카오톡으로도 바로 회원으로서 이용할 수 있도록 하였다. 다만, 카카오톡 연동은 아직 안 되었으며 안드로이드 디바이스에 대한 API 환경 설정을 추가적으로 해야 한다.
+
+<img src="doc/updated_login_screen.png" width="275" height="600" />
+
+Today's Pros
+- Firebase와 Google Cloud Platform에 대해서 자세히 알아볼 수 있었다.
+
+Today's Cons
+- 코드의 줄 수가 늘어나면서 MVC 패턴 등을 적용하여 설계하는 것이 필요할 것 같다.
+- 현재 코드의 리팩토링이 필요하다.
+- 앞으로 여러 디바이스에서 비슷한 비율의 레이아웃을 보여줄 수 있도록 수정해야 한다.
+- 카카오톡과의 로그인 연동도 구현해야 하며 안드로이드 디바이스에 대한 API 환경 설정을 해야 한다.
