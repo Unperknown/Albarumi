@@ -4,6 +4,8 @@ import '../bloc/user_bloc.dart';
 import '../bloc/user_bloc_provider.dart';
 
 import '../utils/colors.dart';
+import '../utils/strings.dart';
+
 import 'register_page.dart';
 import 'main_page.dart';
 
@@ -29,23 +31,25 @@ class LoginState extends State<AlbarumiLoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+
     return Scaffold(
       body: Center(
         child: ListView(
-          padding: EdgeInsets.all(40.0),
+          padding: EdgeInsets.all(height / 15.0),
           children: <Widget>[
             Column(
               children: <Widget>[
-                SizedBox(height: 240.0),
+                SizedBox(height: height / 4.0),
                 Text(
-                  '올바르미',
+                  Strings.logo,
                   style: TextStyle(
                     fontSize: 60.0,
                     fontFamily: 'TmonMonsori',
                     color: AlbarumiDarkColor,
                   ),
                 ),
-                SizedBox(height: 200.0),
+                SizedBox(height: height / 5.0),
               ],
             ),
             TextField(
@@ -54,10 +58,10 @@ class LoginState extends State<AlbarumiLoginPage> {
                 border: OutlineInputBorder(
                   borderRadius: new BorderRadius.circular(15.0),
                 ),
-                labelText: '아이디',
+                labelText: Strings.idField,
               ),
             ),
-            SizedBox(height: 15.0),
+            SizedBox(height: height / 80.0),
             TextField(
               obscureText: true,
               controller: _passwordController,
@@ -65,12 +69,12 @@ class LoginState extends State<AlbarumiLoginPage> {
                 border: OutlineInputBorder(
                   borderRadius: new BorderRadius.circular(15.0),
                 ),
-                labelText: '비밀번호',
+                labelText: Strings.passwordField,
               ),
             ),
-            SizedBox(height: 10.0),
+            SizedBox(height: height / 80.0),
             RaisedButton(
-              child: Text('로그인'),
+              child: Text(Strings.login),
               onPressed: () {
                 bloc.signIn(_idController.text, _passwordController.text)
                     .then((isSignIn) {
@@ -87,12 +91,10 @@ class LoginState extends State<AlbarumiLoginPage> {
               shape: RoundedRectangleBorder(
                 borderRadius: new BorderRadius.circular(15.0),
               ),
-              padding: EdgeInsets.symmetric(
-                vertical: 15.0,
-              ),
+              padding: EdgeInsets.symmetric(vertical: 15.0),
             ),
             FlatButton(
-              child: Text('아직 회원이 아니신가요?'),
+              child: Text(Strings.notSignUp),
               onPressed: () {
                 Navigator.push(
                   context,

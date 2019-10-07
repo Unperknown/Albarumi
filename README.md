@@ -107,3 +107,17 @@ Pros
 Cons
 - 파일을 나누었음에도 불구하고 여전히 가독성이 떨어지는 부분이 있다.(UI 계층 등)
 - BLoC 패턴을 적용하는 데 생각보다 시간이 너무 많이 소요되었다.(4일)
+
+### 10/7 - Made Responsive Application By Devices' Screen Size
+
+UI 계층에서 디바이스 스크린의 크기에 관계 없이 비슷한 UI를 보여줄 수 있도록 하였다.
+
+<img src="doc/login_in_ip8+.png" width="275" height="600" />
+<img src="doc/login_in_ip8.png" width="275" height="600" />
+<img src="doc/login_in_ip11promax.png" width="275" height="600" />
+
+Pros
+- 다양한 디바이스에서 정상적으로 테스트할 수 있는 환경을 만들었다.
+
+Cons
+- UI를 구성하는 데 필요한 정량적인 값을 현재 하드 코딩으로 해놓았다. 앞으로 이를 리팩토링할 수 있는 방법을 생각해야 한다.
