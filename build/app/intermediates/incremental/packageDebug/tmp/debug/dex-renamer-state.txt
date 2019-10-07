@@ -1,4 +1,0 @@
-#Thu Sep 26 09:12:55 KST 2019
-base.0=/Development/raw-albarumi/build/app/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
