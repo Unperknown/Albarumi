@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:firebase_auth/firebase_auth.dart';
+
 import '../resources/repository.dart';
 import 'package:rxdart/rxdart.dart';
 import '../models/user_model.dart';
@@ -31,6 +33,12 @@ class UserBloc {
     changePassword(password);
 
     return _repository.signIn(_id.value, _password.value);
+  }
+
+  Future<bool> signInWithGoogle() {
+    _repository.signInWithGoogle().then((isSignIn) {
+      return isSignIn;
+    });
   }
 
   Future<bool> register(String username, String id, String password) {

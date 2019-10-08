@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 import '../utils/colors.dart';
+import '../utils/strings.dart';
+
 import 'login_page.dart';
 
 class AlbarumiSplashScreen extends StatefulWidget {
@@ -16,7 +18,7 @@ class SplashScreenState extends State<AlbarumiSplashScreen> {
 			seconds: 3,
 			navigateAfterSeconds: new AlbarumiLoginPage(),
 			title: new Text(
-				'올바르미',
+				Strings.logo,
 				style: new TextStyle(
 					fontFamily: 'TmonMonsori',
 					fontSize: 60.0,

@@ -4,6 +4,7 @@ import '../bloc/user_bloc.dart';
 import '../bloc/user_bloc_provider.dart';
 
 import '../utils/colors.dart';
+import '../utils/strings.dart';
 
 class AlbarumiRegisterPage extends StatefulWidget {
 	@override
@@ -40,7 +41,7 @@ class RegisterState extends State<AlbarumiRegisterPage> {
                 border: OutlineInputBorder(
                   borderRadius: new BorderRadius.circular(15.0),
                 ),
-                labelText: '이메일',
+                labelText: Strings.idField,
               ),
             ),
             TextField(
@@ -50,7 +51,7 @@ class RegisterState extends State<AlbarumiRegisterPage> {
                 border: OutlineInputBorder(
                   borderRadius: new BorderRadius.circular(15.0),
                 ),
-                labelText: '비밀번호',
+                labelText: Strings.passwordField,
               ),
             ),
             TextField(
@@ -60,11 +61,11 @@ class RegisterState extends State<AlbarumiRegisterPage> {
                 border: OutlineInputBorder(
                   borderRadius: new BorderRadius.circular(15.0),
                 ),
-                labelText: '닉네임',
+                labelText: Strings.usernameField,
               ),
             ),
 						RaisedButton(
-							child: Text('가입하기'),
+							child: Text(Strings.register),
 							onPressed: () {
                 bloc.register(_usernameController.text, _idController.text, _passwordController.text)
                     .then((isRegistered) {

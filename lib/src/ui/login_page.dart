@@ -5,6 +5,7 @@ import '../bloc/user_bloc_provider.dart';
 
 import '../utils/colors.dart';
 import '../utils/strings.dart';
+import '../utils/widgets.dart';
 
 import 'register_page.dart';
 import 'main_page.dart';
@@ -40,69 +41,63 @@ class LoginState extends State<AlbarumiLoginPage> {
           children: <Widget>[
             Column(
               children: <Widget>[
-                SizedBox(height: height / 4.0),
-                Text(
-                  Strings.logo,
-                  style: TextStyle(
-                    fontSize: 60.0,
-                    fontFamily: 'TmonMonsori',
-                    color: AlbarumiDarkColor,
-                  ),
-                ),
+                SizedBox(height: height / 8.0),
+                Widgets.logo(),
                 SizedBox(height: height / 5.0),
               ],
             ),
-            TextField(
-              controller: _idController,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: new BorderRadius.circular(15.0),
-                ),
-                labelText: Strings.idField,
-              ),
-            ),
+            Widgets.inputButton(_idController, Strings.idField, false),
             SizedBox(height: height / 80.0),
-            TextField(
-              obscureText: true,
-              controller: _passwordController,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: new BorderRadius.circular(15.0),
-                ),
-                labelText: Strings.passwordField,
-              ),
-            ),
+            Widgets.inputButton(
+                _passwordController, Strings.passwordField, true),
             SizedBox(height: height / 80.0),
-            RaisedButton(
-              child: Text(Strings.login),
-              onPressed: () {
-                bloc.signIn(_idController.text, _passwordController.text)
-                    .then((isSignIn) {
-                          if (isSignIn) {
+            Widgets.loginButton(() => {
+                  bloc
+                      .signIn(_idController.text, _passwordController.text)
+                      .then((isSignIn) {
+                    if (isSignIn) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => AlbarumiMainPage()),
+                      );
+                    }
+                  })
+                }),
+            Widgets.registerButton(() {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AlbarumiRegisterPage()),
+              );
+            }),
+            Widgets.dividers(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Widgets.imageButton(
+                    "assets/images/google_logo.png",
+                    Colors.white,
+                    () => {
+                          bloc.signInWithGoogle().then((isSignIn) {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => AlbarumiMainPage()),
+                              MaterialPageRoute(
+                                  builder: (context) => AlbarumiMainPage()),
                             );
-                          }
-                        });
-              },
-              textColor: Colors.white,
-              color: AlbarumiDarkColor,
-              shape: RoundedRectangleBorder(
-                borderRadius: new BorderRadius.circular(15.0),
-              ),
-              padding: EdgeInsets.symmetric(vertical: 15.0),
-            ),
-            FlatButton(
-              child: Text(Strings.notSignUp),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => AlbarumiRegisterPage()),
-                );
-              },
-            ),
+                          })
+                        }),
+                Widgets.imageButton(
+                  "assets/images/kakaotalk_logo.png",
+                  KakaoTalkColor,
+                  () => {},
+                ),
+                Widgets.imageButton(
+                  "assets/images/facebook_logo.png",
+                  FacebookColor,
+                  () => {},
+                ),
+              ],
+            )
           ],
         ),
       ),

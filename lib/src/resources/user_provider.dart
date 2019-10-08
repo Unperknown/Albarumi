@@ -26,7 +26,7 @@ class UserProvider {
     return true;
   }
 
-  Future<FirebaseUser> signInWithGoogle() async {
+  Future<bool> signInWithGoogle() async {
     final GoogleSignInAuthentication authentication = await loginedGoogleUserAuthentication();
 
     final AuthCredential credential = GoogleAuthProvider.getCredential(
@@ -36,7 +36,7 @@ class UserProvider {
 
     await _firebaseAuth.signInWithCredential(credential);
 
-    return _firebaseAuth.currentUser();
+    return isSignedIn();
   }
 
   Future<bool> isSignedIn() async {
