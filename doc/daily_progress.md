@@ -1,47 +1,4 @@
-![author](https://img.shields.io/badge/author-Unperknown-lightgrey.svg)
-![HitCount](http://hits.dwyl.io/Unperknown/Albarumi.svg)
-![Bitbucket open issues](https://img.shields.io/github/issues/Unperknown/Albarumi)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Unperknown/Albarumi)
-![GitHub](https://img.shields.io/github/license/Unperknown/Albarumi)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Unperknown/Albarumi)
-
-# 👣 Albarumi(올바르미)
-
-## 📋 Purpose
-Restarting for initially rejected idea for several contests, we decided to make a cross-platform mobile application, which is called Albarumi(means 'justness' in Korean). This app helps people to find what they lost for each other, 
-
-## 💡 Goals
-
-1. Make sure to design a better experience for users for accessability and convenience.
-2. The application must be run in cross-platform(iOS & Android).
-3. If possible, additional Progressive Web App should be created.
-
-## 👪 Contributors
-
-### Development I
-- [🔗Unperknown](https://github.com/Unperknown)
-- [🔗Taegeon Yoo](https://github.com/taegeon-ryan)
-- [🔗Taegeon Lim](https://github.com/Im-Tae)
-
-### Development II
-
-- [🔗Unperknown](https://github.com/Unperknown)
-
-## 🎞 Prototype
-
-### Development I
-
-![Albarumi's Initial Prototype](/doc/프로토타입(구버전).png)
-
-### Development II
-
-## 🔑 Technology Stacks
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="200" height="100" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/1024px-Dart_programming_language_logo.svg.png" width="200" height="67" />
-<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" width="225" height="75" />
-
-## [📅 Daily Progress](doc/daily_progress.md)
+## 📅 Daily Progress
 
 ### 8/26 ~ 8/30 : Struggled from an Internet for a Whole Week!🤯
 
@@ -77,8 +34,8 @@ Cons
 
 애플리케이션 개발에 필요한 폰트와 이미지를 모으고 시연품을 제작하는 겸 시작 페이지와 로그인 페이지를 완성하였다. 다만, 이 페이지의 뒷 기능(Back-end)은 나중에 할 계획이다.
 
-<img src="doc/splash_screen.png" width="275" height="600" />
-<img src="doc/login_page.png" width="275" height="600" />
+<img src="images/splash_screen.png" width="275" height="600" />
+<img src="images/login_page.png" width="275" height="600" />
 
 Pros
 - Flutter의 API 문서를 보고 Flutter로 개발된 프로젝트의 과정을 벤치 마킹 삼아 디자인하니 결과물이 준수하게 나올 수 있었다.
@@ -91,7 +48,7 @@ Cons
 
 타 웹페이지의 로그인 API를 불러올 수 있도록 애플리케이션을 Firebase와 연동하였다. 로그인 과정을 간단하게 하기 위해서 Google, Facebook, 카카오톡으로도 바로 회원으로서 이용할 수 있도록 하였다. 다만, 카카오톡 연동은 아직 안 되었으며 안드로이드 디바이스에 대한 API 환경 설정을 추가적으로 해야 한다.
 
-<img src="doc/updated_login_screen.png" width="275" height="600" />
+<img src="images/updated_login_screen.png" width="275" height="600" />
 
 Pros
 - Firebase와 Google Cloud Platform에 대해서 자세히 알아볼 수 있었다.
@@ -119,9 +76,9 @@ Cons
 
 UI 계층에서 디바이스 스크린의 크기에 관계 없이 비슷한 UI를 보여줄 수 있도록 하였다.
 
-<img src="doc/login_in_ip8+.png" width="275" height="600" />
-<img src="doc/login_in_ip8.png" width="275" height="600" />
-<img src="doc/login_in_ip11promax.png" width="275" height="600" />
+<img src="images/login_in_ip8+.png" width="275" height="600" />
+<img src="images/login_in_ip8.png" width="275" height="600" />
+<img src="images/login_in_ip11promax.png" width="275" height="600" />
 
 Pros
 - 다양한 디바이스에서 정상적으로 테스트할 수 있는 환경을 만들었다.
@@ -137,4 +94,4 @@ Pros
 - 전보다 UI 계층의 코드를 읽기 쉬워졌다.
 - 다른 방법으로 로그인하는 부분의 UI가 전보다 명료해졌다.
 
-<img src="doc/completed_login_ui.png" width="275" height="600" />
+<img src="images/completed_login_ui.png" width="275" height="600" />
