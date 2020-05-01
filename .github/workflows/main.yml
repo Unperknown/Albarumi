@@ -1,0 +1,51 @@
+name: Flutter CI
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+  pull_request:
+    branches-ignore:
+      - 'master'
+
+jobs:
+  build:
+    name: Albarumi Test on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+    - name: Clone Flutter repository
+      uses: actions/checkout@v2
+      with:
+        repository: 'flutter/flutter'
+        ref: 'master'
+        path: 'flutter'
+        fetch-depth: 0
+    - name: Add Flutter to the PATH if running OS is Unix
+      run: echo "::add-path::/$GITHUB_WORKSPACE/flutter/bin"
+      if: runner.os != 'Windows'
+    - name: Add Flutter to the PATH if running OS is Windows
+      run: echo "::add-path::${env:GITHUB_WORKSPACE}\flutter\bin"
+      if: runner.os == 'Windows'
+    - name: Doctor Flutter repository
+      run: flutter doctor -v
+
+    - name: Clone Albarumi repository
+      uses: actions/checkout@v2
+      with:
+        path: 'albarumi'
+
+    - name: Fetch all dependencies on Flutter project
+      run: flutter pub get
+      working-directory: albarumi
+    - name: Analyze Dart code
+      run: flutter analyze
+      working-directory: albarumi
+    - name: Test Flutter project
+      run: flutter test
+      working-directory: albarumi
+    - name: Build and export to apk from Flutter project
+      run: flutter build apk
+      working-directory: albarumi
