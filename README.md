@@ -1,7 +1,5 @@
-![author](https://img.shields.io/badge/author-Unperknown-lightgrey.svg)
-![HitCount](http://hits.dwyl.io/Unperknown/Albarumi.svg)
-![Bitbucket open issues](https://img.shields.io/github/issues/Unperknown/Albarumi)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Unperknown/Albarumi)
+![Contributors](https://img.shields.io/badge/Contributors-Unperknown,_Taegeon_Yoo,_Taegeon_Lim-lightgrey.svg)
+![Flutter CI](https://github.com/Unperknown/Albarumi/workflows/Flutter%20CI/badge.svg)
 ![GitHub](https://img.shields.io/github/license/Unperknown/Albarumi)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Unperknown/Albarumi)
 
